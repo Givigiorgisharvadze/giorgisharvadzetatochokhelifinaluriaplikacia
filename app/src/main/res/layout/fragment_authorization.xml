@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentAuthorization">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="ავტორიზაცია"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="მეილი"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="პაროლი"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/tvReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="არ გაქვთ ანგარიში? შექმენით"
+            android:gravity="start"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvPassRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="პაროლის აღდგენა"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvPassChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="პაროლის შეცვლა"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnAuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ავტორიზაცია"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

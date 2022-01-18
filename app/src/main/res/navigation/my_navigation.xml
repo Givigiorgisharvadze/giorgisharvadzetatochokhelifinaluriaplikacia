@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/fragmentAuthorization">
+
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.example.praqtikulisamushao.fragmentRegistration"
+        android:label="fragmentRegistration" >
+        <action
+            android:id="@+id/regToRec"
+            app:destination="@id/fragmentPasswordRecovery" />
+        <action
+            android:id="@+id/regToAuth"
+            app:destination="@id/fragmentAuthorization" />
+        <action
+            android:id="@+id/regToChange"
+            app:destination="@id/fragmentChangePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPasswordRecovery"
+        android:name="com.example.praqtikulisamushao.fragmentPasswordRecovery"
+        android:label="fragmentPasswordRecovery" >
+        <action
+            android:id="@+id/recToReg"
+            app:destination="@id/fragmentRegistration" />
+        <action
+            android:id="@+id/recToAuth"
+            app:destination="@id/fragmentAuthorization" />
+        <action
+            android:id="@+id/recToChange"
+            app:destination="@id/fragmentChangePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAuthorization"
+        android:name="com.example.praqtikulisamushao.fragmentAuthorization"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/authToReg"
+            app:destination="@id/fragmentRegistration" />
+        <action
+            android:id="@+id/authToRec"
+            app:destination="@id/fragmentPasswordRecovery" />
+        <action
+            android:id="@+id/authToChange"
+            app:destination="@id/fragmentChangePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChangePassword"
+        android:name="com.example.praqtikulisamushao.fragmentChangePassword"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/changeToRec"
+            app:destination="@id/fragmentPasswordRecovery" />
+        <action
+            android:id="@+id/changeToReg"
+            app:destination="@id/fragmentRegistration" />
+        <action
+            android:id="@+id/changeToAuth"
+            app:destination="@id/fragmentAuthorization" />
+    </fragment>
+</navigation>
